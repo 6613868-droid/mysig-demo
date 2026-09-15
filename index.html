@@ -1,0 +1,614 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MYSIG — candle atelier. Ночной уход нового поколения</title>
+<meta name="description" content="MYSIG: соевые свечи и диффузоры ручной работы с ароматами Калининградской области. Тёплый свет, честный состав, шоурум на Понарте.">
+<meta name="theme-color" content="#0c0906">
+<meta property="og:title" content="MYSIG — candle atelier">
+<meta property="og:description" content="Профессиональная линейка для вечернего skincare-ритуала. Пока город спит — кожа восстанавливается.">
+<meta property="og:image" content="images/line-wide.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 60 60'%3E%3Ccircle cx='30' cy='30' r='30' fill='%230a0714'/%3E%3Cpath d='M52.5 31.97A22.5 22.5 0 1 1 28.02 7.5a17.5 17.5 0 0 0 24.48 24.47z' fill='%23e0a75e'/%3E%3C/svg%3E">
+<script>document.documentElement.classList.add('js')</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,400&family=Doto:wght@700;800&family=Montserrat:wght@200;300;400;500&family=Oswald:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0c0906;--bg2:#17110b;--text:#f5efe4;--muted:#a3967f;--lav:#e0a75e;--glow:#c07a2e;--line:rgba(224,167,94,.16)}
+  *{margin:0;padding:0;box-sizing:border-box}
+  body{background:var(--bg);color:var(--text);font-family:'Montserrat',sans-serif;font-weight:300;font-size:15px;line-height:1.75;overflow-x:hidden}
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 28px}
+  .serif{font-family:'Cormorant Garamond',serif;font-weight:400}
+  header{position:relative;z-index:5;padding:26px 0}
+  .header-in{display:flex;align-items:center;justify-content:space-between}
+  .logo{font-family:'Cormorant Garamond',serif;font-size:26px;letter-spacing:.32em;color:var(--lav)}
+  nav{display:flex;gap:36px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+  nav a:hover{color:var(--lav)}
+  .hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden}
+  .hero .bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.55}
+  .hero .fade{position:absolute;inset:0;background:linear-gradient(to bottom, rgba(10,7,20,.25), rgba(10,7,20,.1) 45%, var(--bg))}
+  .hero-in{position:relative;z-index:2;text-align:center;width:100%;padding:0 24px}
+  .kicker{font-size:12px;letter-spacing:.5em;text-transform:uppercase;color:var(--lav);margin-bottom:30px}
+  h1{font-family:'Cormorant Garamond',serif;font-weight:300;font-size:clamp(56px,10vw,128px);line-height:1.02;color:#fff;margin-bottom:26px}
+  h1 em{font-style:italic;color:var(--lav)}
+  .hero p{color:#d9cfbe;max-width:520px;margin:0 auto 42px;font-size:16.5px}
+  .btn{display:inline-block;font-size:12.5px;letter-spacing:.28em;text-transform:uppercase;padding:17px 44px;border:1px solid var(--lav);color:var(--lav);transition:.25s;cursor:pointer}
+  .btn:hover{background:var(--lav);color:var(--bg);box-shadow:0 0 44px rgba(192,122,46,.4)}
+  section{position:relative;padding:110px 0}
+  .num{font-family:'Cormorant Garamond',serif;font-style:italic;color:var(--lav);font-size:20px;letter-spacing:.2em;margin-bottom:22px}
+  h2{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(34px,4.6vw,58px);line-height:1.12;margin-bottom:20px}
+  h2 em{font-style:italic;color:var(--lav)}
+  .sub{color:var(--muted);max-width:520px;margin-bottom:56px}
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+  .split img{width:100%;display:block;border:1px solid var(--line)}
+  .split p{color:var(--muted);margin-bottom:22px}
+  .split ul{list-style:none;color:var(--text)}
+  .split li{padding:12px 0;border-bottom:1px solid var(--line);font-size:14.5px}
+  .split li span{color:var(--lav);margin-right:12px;font-family:'Cormorant Garamond',serif;font-style:italic}
+  .quote{background:linear-gradient(160deg,#1b150b,#0c0906);border:1px solid var(--line);border-radius:2px;padding:56px;text-align:center}
+  .quote .mark{font-family:'Cormorant Garamond',serif;font-size:90px;line-height:.4;color:var(--lav);display:block;margin-bottom:30px}
+  .quote p{font-family:'Cormorant Garamond',serif;font-size:27px;font-style:italic;color:#f0e7d5;max-width:760px;margin:0 auto 26px}
+  .quote span{font-size:12px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+  footer{border-top:1px solid var(--line);padding:40px 0;color:var(--muted);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase}
+  .footer-in{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px}
+  @media(max-width:900px){
+    nav{display:none}
+    .split{grid-template-columns:1fr;gap:44px}
+    .contact-card{flex-direction:column;text-align:center}
+    section{padding:80px 0}
+    .bento{grid-template-columns:repeat(2,1fr)}
+  }
+  /* ——— анимации ——— */
+  @keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-9px)}}
+  @keyframes ringfill{to{stroke-dashoffset:var(--off)}}
+  @keyframes glowpulse{0%,100%{box-shadow:0 0 22px rgba(224,167,94,.10)}50%{box-shadow:0 0 40px rgba(224,167,94,.24)}}
+  @keyframes fadeup{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
+  html{scroll-behavior:smooth}
+  ::selection{background:var(--glow);color:#fff}
+  .js .rv{opacity:0;transform:translateY(26px)}
+  .js .rv.on{animation:fadeup .9s cubic-bezier(.2,.7,.2,1) forwards}
+  @media(prefers-reduced-motion:reduce){
+    .js .rv{opacity:1;transform:none}
+    .js .rv.on{animation:none}
+    .cell,.float-tag,.jtag,.jnum,.led-big{animation:none!important}
+  }
+  /* ——— LED-типографика ——— */
+  .led{font-family:'Doto','Courier New',monospace;font-weight:800;color:#f9f3e2;text-shadow:0 0 10px rgba(224,167,94,.9),0 0 30px rgba(192,122,46,.55);pointer-events:none}
+  /* ——— баннер новой линии ——— */
+  .newline{background:#0d0916;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .line-banner{position:relative;margin-top:56px;overflow:hidden}
+  .line-banner img{width:100%;display:block;aspect-ratio:16/10;object-fit:cover}
+  .line-banner .veil{position:absolute;inset:0;background:linear-gradient(to top, rgba(10,7,20,.82), rgba(10,7,20,.05) 55%, rgba(10,7,20,.3)),linear-gradient(to right, rgba(10,7,20,.5), transparent 45%)}
+  .line-head{position:absolute;top:34px;left:44px;z-index:2}
+  .line-head .fresh{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#f3dcae;margin-bottom:14px}
+  .line-head .fresh i{font-style:normal;letter-spacing:.4em;font-size:9px}
+  .line-head .nl{font-size:27px;letter-spacing:.22em;text-transform:uppercase;color:#fff;font-weight:500;line-height:1.35;font-family:'Oswald',sans-serif}
+  .line-head .nl b{color:#f3dcae}
+  .line-feats{position:absolute;left:44px;bottom:66px;z-index:2;display:flex;gap:34px}
+  .line-feats div{width:120px;font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#d6c9b2;line-height:1.6}
+  .line-feats div::before{content:'';display:block;width:26px;height:26px;border:1px solid rgba(217,201,255,.55);border-radius:50%;margin-bottom:10px;background:radial-gradient(circle at 35% 35%, rgba(217,201,255,.4), transparent 65%)}
+  .line-bottom{position:absolute;left:0;right:0;bottom:22px;z-index:2;text-align:center;font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:rgba(255,255,255,.75)}
+  .jtag{position:absolute;display:inline-flex;align-items:center;gap:9px;background:rgba(18,12,31,.66);backdrop-filter:blur(8px);border:1px solid rgba(224,167,94,.4);border-radius:99px;padding:9px 18px;font-size:12.5px;letter-spacing:.1em;color:#f0e7d5;animation:floaty 5.5s ease-in-out infinite;box-shadow:0 0 24px rgba(192,122,46,.3);z-index:2}
+  .jtag.j1{top:24%;left:11%}
+  .jtag.j2{top:46%;right:31%;animation-delay:1s}
+  .jtag.j3{top:20%;right:9%;animation-delay:2s}
+  .jnum{position:absolute;font-family:'Doto','Courier New',monospace;font-weight:800;color:#f9f3e2;text-shadow:0 0 10px rgba(224,167,94,.9),0 0 30px rgba(192,122,46,.55);pointer-events:none;animation:floaty 6s ease-in-out infinite;z-index:2}
+  .jn1{font-size:42px;left:26%;top:46%;animation-delay:.8s}
+  .jn2{font-size:56px;left:53%;top:9%}
+  .jn3{font-size:42px;right:4%;top:42%;animation-delay:1.6s}
+  .line-mark{position:absolute;top:24px;right:28px;z-index:2;font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,255,255,.72)}
+  .line-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:26px}
+  .lcard{border:1px solid var(--line);background:var(--bg2);padding:14px 14px 24px}
+  .lcard img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;margin-bottom:18px}
+  .lcard h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:25px;color:#fff;margin-bottom:6px}
+  .lcard h3 i{font-style:italic;color:var(--lav)}
+  .lcard p{font-size:13.5px;color:var(--muted)}
+  .lcard .step{font-family:'Doto','Courier New',monospace;font-weight:800;font-size:15px;color:#f3dcae;text-shadow:0 0 8px rgba(224,167,94,.8);display:block;margin-bottom:10px}
+  /* ——— панель результатов Dr. J4 ——— */
+  .res-panel{display:grid;grid-template-columns:1.02fr 1fr;background:#0d0916;border:1px solid var(--line);border-radius:28px;overflow:hidden}
+  .res-photo{position:relative;min-height:480px}
+  .res-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:72% 18%}
+  .res-photo::after{content:'';position:absolute;inset:0;background:linear-gradient(115deg, rgba(13,9,22,.62), transparent 55%),linear-gradient(to top, rgba(13,9,22,.55), transparent 45%)}
+  .led-big{position:absolute;z-index:2;animation:floaty 6s ease-in-out infinite}
+  .led-dr{top:20px;left:28px;font-size:68px}
+  .led-j4{bottom:8px;right:26px;font-size:100px;animation-delay:1.4s}
+  .res-side{padding:52px 50px 46px;display:flex;flex-direction:column;align-items:flex-start}
+  .res-side .num{margin-bottom:14px}
+  .res-head{font-family:'Oswald',sans-serif;font-weight:500;font-size:clamp(24px,2.7vw,36px);line-height:1.22;text-transform:uppercase;letter-spacing:.02em;margin-bottom:30px;max-width:400px}
+  .res-chips{display:flex;flex-direction:column;gap:12px;width:100%;max-width:360px;margin-bottom:30px}
+  .res-chip{display:flex;align-items:center;gap:14px;background:#f7f1e4;color:#241a3d;border-radius:99px;padding:11px 20px 11px 12px;font-size:13.5px;letter-spacing:.04em}
+  .res-chip .dot{flex:none;width:28px;height:28px;border-radius:50%;background:#241a3d;color:#f7f1e4;display:grid;place-items:center;font-size:13px}
+  .res-note{color:var(--muted);font-size:13.5px;max-width:380px;margin-bottom:34px}
+  .res-note b{color:var(--text);font-weight:400}
+  /* ——— экран NIGHT BLOOM ——— */
+  .bloom{position:relative;min-height:74vh;display:grid;place-items:center;overflow:hidden;text-align:center;padding:110px 0}
+  .bloom .bgimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .bloom .veil{position:absolute;inset:0;background:linear-gradient(to bottom,var(--bg),rgba(10,7,20,.25) 30%,rgba(10,7,20,.4) 65%,var(--bg)),radial-gradient(ellipse at center,transparent 40%,rgba(10,7,20,.55))}
+  .bloom-t{position:relative;font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(58px,11vw,160px);line-height:.98;text-transform:uppercase;letter-spacing:.03em;color:#fff;text-shadow:0 0 50px rgba(192,122,46,.6)}
+  .bloom-t i{font-style:normal;color:transparent;-webkit-text-stroke:1.5px rgba(235,228,255,.85);text-shadow:none}
+  .bloom-s{position:relative;margin-top:22px;font-size:11.5px;letter-spacing:.4em;text-transform:uppercase;color:#d6c9b2}
+  /* ——— дашборд с показателями ——— */
+  .dash{display:grid;grid-template-columns:290px 1fr;background:linear-gradient(160deg,#130d22,#0c0816);border:1px solid rgba(224,167,94,.28);border-radius:28px;overflow:hidden;box-shadow:0 30px 80px rgba(4,2,10,.55)}
+  .dash-product{padding:28px;border-right:1px solid var(--line);display:flex;flex-direction:column;gap:16px}
+  .dash-product img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:16px;border:1px solid var(--line)}
+  .dash-product b{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:22px;color:#fff;line-height:1.2}
+  .dash-product .dcount{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted)}
+  .toggles{display:flex;flex-direction:column;gap:8px;margin-top:4px}
+  .toggles span{border:1px solid var(--line);border-radius:99px;padding:9px 16px;font-size:11.5px;letter-spacing:.08em;color:var(--muted);display:flex;align-items:center;gap:10px}
+  .toggles span::before{content:'';width:26px;height:15px;border-radius:99px;border:1px solid rgba(224,167,94,.4);position:relative}
+  .toggles span.on{color:#f0e7d5;border-color:rgba(224,167,94,.45);background:rgba(224,167,94,.08)}
+  .toggles span.on::before{background:linear-gradient(90deg,var(--lav),var(--glow));border-color:transparent;box-shadow:0 0 10px rgba(192,122,46,.6)}
+  .toggles span.on::after{content:'';position:absolute}
+  .dash-price{margin-top:auto;padding-top:18px;border-top:1px solid var(--line);display:flex;align-items:baseline;gap:10px}
+  .dash-price b{font-family:'Oswald',sans-serif;font-weight:500;font-size:26px;color:#fff}
+  .dash-price small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+  .dash-main{padding:30px 30px 26px;display:flex;flex-direction:column;gap:24px}
+  .dash-rings{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .gauge{text-align:center}
+  .gauge svg{width:112px;height:112px;transform:rotate(-90deg);margin:0 auto;display:block}
+  .gauge svg .track{fill:none;stroke:rgba(224,167,94,.12);stroke-width:7}
+  .gauge svg .val{fill:none;stroke:url(#grad);stroke-width:7;stroke-linecap:round;stroke-dasharray:100;stroke-dashoffset:100;animation:ringfill 2.2s cubic-bezier(.35,.9,.3,1) forwards;animation-play-state:paused}
+  .dash.seen .gauge svg .val{animation-play-state:running}
+  .gauge .valnum{position:relative;font-family:'Cormorant Garamond',serif;font-size:33px;color:#fff;margin-top:-84px;display:block;pointer-events:none}
+  .gauge .glabel{display:block;margin-top:26px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);line-height:1.55;max-width:170px;margin-left:auto;margin-right:auto}
+  .dash-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+  .tile{border:1px solid rgba(224,167,94,.24);border-radius:18px;padding:18px 16px 15px;text-align:center;background:linear-gradient(160deg,rgba(224,167,94,.08),rgba(224,167,94,.02))}
+  .tile b{display:block;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:32px;color:#fff;line-height:1.1}
+  .tile span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+  .tile.hot{background:linear-gradient(160deg,rgba(192,122,46,.32),rgba(192,122,46,.08));border-color:rgba(224,167,94,.5)}
+  /* ——— баннер тонера (светлый) ——— */
+  .toner-panel{position:relative;border-radius:30px;overflow:hidden;min-height:480px;display:flex;align-items:center;background:url('images/toner.png') center/cover no-repeat}
+  .toner-panel::before{content:'';position:absolute;inset:0;background:linear-gradient(100deg, rgba(222,214,242,.94) 8%, rgba(222,214,242,.55) 45%, rgba(222,214,242,0) 72%)}
+  .toner-copy{position:relative;z-index:2;padding:96px 48px 52px;max-width:560px;color:#241a3d}
+  .toner-copy .tmark{font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:rgba(43,32,77,.65);margin-bottom:22px}
+  .toner-copy h3{font-family:'Oswald',sans-serif;font-weight:600;font-size:clamp(28px,3.6vw,46px);line-height:1.14;text-transform:uppercase;color:#2b2050;margin-bottom:18px}
+  .toner-copy h3 b{color:#5a3fb0}
+  .toner-copy p{font-size:14px;color:#4a3d73;max-width:380px;margin-bottom:40px}
+  .toner-ph{display:flex;align-items:baseline;gap:12px}
+  .toner-ph .big{font-family:'Doto','Courier New',monospace;font-weight:800;font-size:76px;line-height:1;color:#fff;text-shadow:0 0 14px rgba(192,122,46,.95),0 0 44px rgba(192,122,46,.55),0 1px 2px rgba(43,32,77,.25)}
+  .toner-ph small{font-family:'Doto','Courier New',monospace;font-weight:700;font-size:22px;color:#4a3d73;letter-spacing:.14em}
+  .toner-badge{position:absolute;right:30px;bottom:30px;z-index:2;background:rgba(255,255,255,.92);border-radius:18px;padding:14px 22px;text-align:center;box-shadow:0 14px 40px rgba(43,32,77,.22)}
+  .toner-badge b{display:block;font-family:'Cormorant Garamond',serif;font-weight:400;font-size:30px;color:#2b2050;line-height:1.05}
+  .toner-badge span{font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:#6a5c96}
+  .toner-arrows{position:absolute;top:26px;left:30px;z-index:2;display:flex;gap:10px}
+  .toner-arrows i{width:40px;height:40px;border-radius:50%;border:1px solid rgba(43,32,77,.35);color:#2b2050;display:grid;place-items:center;font-style:normal;font-size:16px;background:rgba(255,255,255,.4);backdrop-filter:blur(4px)}
+  /* ——— большой типографический экран ——— */
+  .statement{position:relative;overflow:hidden;background:#080511;padding:130px 0 140px;text-align:center}
+  .statement .halo{position:absolute;left:50%;bottom:-55%;transform:translateX(-50%);width:130vw;max-width:1500px;height:1000px;background:radial-gradient(ellipse at center,rgba(192,122,46,.4),rgba(192,122,46,.1) 45%,transparent 70%);filter:blur(8px);pointer-events:none}
+  .st-mark{position:relative;z-index:1;font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:rgba(255,255,255,.6);margin-bottom:44px}
+  .st-top{position:absolute;top:34px;left:0;right:0;z-index:3;display:flex;justify-content:space-between;align-items:flex-start;padding:0 4px;text-align:left}
+  .st-top .cap{max-width:220px;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#b9b0d6;line-height:1.8}
+  .st-top .rit{display:flex;align-items:center;gap:14px;font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:#b9b0d6}
+  .st-top .rit i{width:44px;height:44px;border-radius:50%;border:1px solid rgba(224,167,94,.5);display:grid;place-items:center;font-style:normal;color:#f3dcae;box-shadow:0 0 18px rgba(192,122,46,.35);animation:glowpulse 4.5s ease-in-out infinite}
+  .huge{font-family:'Oswald',sans-serif;font-weight:500;font-size:clamp(38px,6.4vw,96px);line-height:1.13;text-transform:uppercase;letter-spacing:.015em;color:#fff;position:relative;z-index:1}
+  .huge .dm{color:rgba(226,218,250,.26)}
+  .statement .bottle{position:relative;z-index:2;width:min(520px,66vw);margin:-5.5vw auto -5vw;display:block;-webkit-mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 38%,transparent 96%);mask-image:radial-gradient(ellipse 50% 50% at 50% 50%,#000 38%,transparent 96%);filter:drop-shadow(0 30px 70px rgba(192,122,46,.35))}
+  .statement .ml{position:absolute;left:2%;bottom:12%;font-family:'Doto','Courier New',monospace;font-weight:800;font-size:46px;color:#f7f1e4;text-shadow:0 0 12px rgba(224,167,94,.8)}
+  .statement .ml span{font-size:20px;color:var(--muted);text-shadow:none}
+  /* ——— мобильные бейджи ——— */
+  .float-tag{position:absolute;display:inline-flex;align-items:center;gap:8px;background:rgba(18,12,31,.72);backdrop-filter:blur(8px);border:1px solid rgba(224,167,94,.35);border-radius:99px;padding:9px 18px;font-size:12.5px;letter-spacing:.08em;color:var(--lav);animation:floaty 5.2s ease-in-out infinite;box-shadow:0 0 26px rgba(192,122,46,.22);z-index:2}
+  .float-tag i{font-style:normal;font-size:15px}
+  .float-tag.t1{top:9%;right:6%;animation-delay:.6s}
+  .float-tag.t2{bottom:14%;left:4%;animation-delay:1.6s}
+  .photo-wrap{position:relative}
+  /* ——— мобильное меню ——— */
+  .burger{display:none;background:none;border:1px solid var(--line);color:var(--lav);font:inherit;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;padding:10px 16px;cursor:pointer}
+  .mnav{position:fixed;inset:0;z-index:40;background:rgba(10,7,20,.97);display:none;flex-direction:column;align-items:center;justify-content:center;gap:36px}
+  .mnav.open{display:flex}
+  .mnav a{font-family:'Cormorant Garamond',serif;font-size:36px;color:var(--text);letter-spacing:.06em}
+  .mnav a:hover{color:var(--lav)}
+  /* ——— модальное окно заказа ——— */
+  .modal{position:fixed;inset:0;z-index:50;display:none;align-items:center;justify-content:center;background:rgba(6,4,12,.8);backdrop-filter:blur(6px);padding:24px}
+  .modal.open{display:flex}
+  .modal-box{position:relative;background:var(--bg2);border:1px solid var(--line);max-width:460px;width:100%;padding:46px 44px;animation:fadeup .45s ease both}
+  .modal-box h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:34px;margin-bottom:10px}
+  .modal-x{position:absolute;top:10px;right:16px;background:none;border:0;color:var(--muted);font-size:28px;cursor:pointer;line-height:1}
+  .modal-x:hover{color:var(--lav)}
+  .field{width:100%;background:rgba(224,167,94,.06);border:1px solid var(--line);color:var(--text);font:inherit;font-size:14px;padding:14px 16px;margin-bottom:14px;outline:none;transition:.2s}
+  .field:focus{border-color:var(--lav)}
+  .modal .fine{font-size:12.5px;color:var(--muted);margin-top:16px;line-height:1.6}
+  .modal .ok{display:none;text-align:center;padding:26px 0 6px}
+  /* ——— заказ с фоном ——— */
+  #order{overflow:hidden}
+  .order-bg{position:absolute;right:-6%;top:50%;transform:translateY(-50%);width:52%;opacity:.16;-webkit-mask-image:radial-gradient(ellipse at center,#000 30%,transparent 72%);mask-image:radial-gradient(ellipse at center,#000 30%,transparent 72%);pointer-events:none}
+  /* ——— адаптив ——— */
+  @media(max-width:1020px){
+    .dash{grid-template-columns:1fr}
+    .dash-product{border-right:0;border-bottom:1px solid var(--line);flex-direction:row;flex-wrap:wrap;align-items:center}
+    .dash-product img{width:130px}
+    .dash-product .dp-info{flex:1;min-width:180px}
+    .dash-price{margin-top:0;border-top:0;padding-top:0;width:100%;justify-content:space-between}
+    .dash-rings{grid-template-columns:repeat(2,1fr);gap:26px}
+    .dash-strip{grid-template-columns:repeat(2,1fr)}
+    .toner-copy{max-width:70%}
+  }
+  @media(max-width:900px){
+    .header-in>a[data-order]{display:none}
+    .burger{display:inline-block}
+    .res-panel{grid-template-columns:1fr}
+    .res-photo{min-height:380px}
+    .res-side{padding:38px 30px}
+    .led-dr{font-size:44px}.led-j4{font-size:60px}
+    .line-cards{grid-template-columns:1fr}
+    .line-head{left:24px;top:24px}
+    .line-head .nl{font-size:18px}
+    .jtag{font-size:11px;padding:7px 13px}
+    .line-feats{display:none}
+    .jn1,.jn3{font-size:26px}.jn2{font-size:32px}
+    .statement{padding:96px 0}
+    .statement .ml,.st-top .cap{display:none}
+    .st-top{top:20px}
+    .quote.qwith{grid-template-columns:1fr}
+    .qwith .qimg{height:280px}
+    .qwith .qin{padding:40px 30px}
+    .qwith .qin p{font-size:21px}
+    .toner-panel{min-height:420px}
+    .toner-copy{padding:92px 30px 36px;max-width:100%}
+    .toner-panel{flex-direction:column;align-items:stretch}
+    .toner-badge{position:static;align-self:flex-end;margin:0 30px 34px}
+    .toner-badge b{font-size:24px}
+    .order-bg{width:80%;right:-20%}
+  }
+  @media(max-width:520px){
+    .modal-box{padding:36px 26px}
+    .line-bottom{display:none}
+  }
+  @media(max-width:700px){
+    .jtag,.jtag.j1,.jtag.j2,.jtag.j3{position:static;margin:0 8px 10px 0}
+    .jn1,.jn2,.jn3{display:none}
+  }
+</style>
+</head>
+<body>
+
+<header><div class="wrap header-in">
+  <a class="logo" href="#">MYSIG</a>
+  <nav><a href="#line">Коллекция</a><a href="#serum">Сыворотка</a><a href="#effect">Эффект</a><a href="#ritual">Ритуал</a></nav>
+  <a href="#order" data-order style="font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--lav)">Заказать</a>
+  <button class="burger" id="burger" aria-label="Меню">меню</button>
+</div></header>
+
+<div class="mnav" id="mnav">
+  <a href="#line">Коллекция</a>
+  <a href="#serum">Сыворотка</a>
+  <a href="#effect">Эффект</a>
+  <a href="#ritual">Ритуал</a>
+  <a href="#order" data-order>Заказать</a>
+</div>
+
+<div class="hero">
+  <img class="bg" src="images/n1.jpg" alt="Сирень в ночи">
+  <div class="fade"></div>
+  <div class="hero-in">
+    <div class="kicker">Mysig · candle atelier</div>
+    <h1>Зажги атмосферу —<br><em>она пахнет домом</em></h1>
+    <p>Свечи и диффузоры ручной работы с ароматами Калининградской области. Соевый воск, деревянный фитиль и тёплый свет — для тех, кто умеет создавать уют.</p>
+    <a class="btn" href="#line">Смотреть коллекцию</a>
+  </div>
+</div>
+
+<section class="newline" id="line"><div class="wrap">
+  <div class="num">/ коллекция</div>
+  <h2>Warm Glow <em>Atelier</em></h2>
+  <p class="sub">Три формата тёплого света: ароматические свечи, подарочные наборы и мастер-классы в шоуруме на Понарте.</p>
+</div>
+  <div class="line-banner rv">
+    <img src="images/line-wide.jpg" alt="Линейка MYSIG на мокром камне с магнолиями и малиной">
+    <div class="veil"></div>
+    <div class="line-head">
+      <div class="fresh"><i>●●●</i> 3 новинки</div>
+      <div class="nl">New line<br><b>Night Bloom Biotech</b></div>
+    </div>
+    <span class="line-mark">/ mysig</span>
+    <span class="jnum jn1">J1</span>
+    <span class="jnum jn2">J2</span>
+    <span class="jnum jn3">J3</span>
+    <span class="jtag j1">Ароматическая свеча</span>
+    <span class="jtag j2">Дуэт свечей</span>
+    <span class="jtag j3">Трёхфитильная свеча</span>
+    <div class="line-feats">
+      <div>Активные компоненты</div>
+      <div>Молекулярные текстуры</div>
+      <div>Ароматы Балтики</div>
+    </div>
+    <div class="line-bottom">Система ухода, вдохновлённая лунным свечением и природными антиоксидантами</div>
+  </div>
+<div class="wrap">
+  <div class="line-cards">
+    <div class="lcard rv">
+      <img src="images/line-1.jpg" alt="Ночная линия с магнолиями и свечой">
+      <span class="step">J1</span>
+      <h3>Aroma <i>candle</i></h3>
+      <p>Ароматическая свеча: соевый воск и тёплый янтарный свет на 40 часов.</p>
+    </div>
+    <div class="lcard rv">
+      <img src="images/line-2.jpg" alt="Флаконы с магнолией и малиной">
+      <span class="step">J2</span>
+      <h3>Gift <i>duet</i></h3>
+      <p>Дуэт свечей: две янтарные банки — одну подари, одну оставь себе.</p>
+    </div>
+    <div class="lcard rv">
+      <img src="images/line-3.jpg" alt="Три флакона на мокром камне">
+      <span class="step">J3</span>
+      <h3>Three <i>wicks</i></h3>
+      <p>Трёхфитильная свеча: широкое пламя и максимум аромата для больших пространств.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<section id="results"><div class="wrap">
+  <div class="res-panel rv">
+    <div class="res-photo">
+      <img src="images/face-1.jpg" alt="Кожа после регулярного применения линии MYSIG">
+      <span class="led led-big led-dr">Dr.</span>
+      <span class="led led-big led-j4">J4</span>
+    </div>
+    <div class="res-side">
+      <div class="num">/ почему мы</div>
+      <div class="res-head">Почему свечи MYSIG зажигают снова и снова</div>
+      <div class="res-chips">
+        <div class="res-chip"><span class="dot">→</span>тёплый ровный свет</div>
+        <div class="res-chip"><span class="dot">→</span>честный состав</div>
+        <div class="res-chip"><span class="dot">→</span>ароматы Балтики</div>
+      </div>
+      <p class="res-note">Соевый воск, хлопковый фитиль и ручная заливка: <b>0% парафина</b> и <b>100% уюта</b> в каждой банке. Отливаем партии малыми тиражами в шоуруме на Понарте.</p>
+      <a class="btn" href="#order" data-order>Хочу так же</a>
+    </div>
+  </div>
+</div></section>
+
+<section class="bloom">
+  <img class="bgimg" src="images/texture-drop.png" alt="Капля ночной сыворотки на мокром камне">
+  <div class="veil"></div>
+  <div>
+    <div class="bloom-t">Warm<br><i>Glow</i></div>
+    <div class="bloom-s">соевый воск · деревянный фитиль · ароматы Балтики</div>
+  </div>
+</section>
+
+<section id="effect"><div class="wrap">
+  <div class="num">№ 02 — эффект</div>
+  <h2>MYSIG <em>в цифрах</em></h2>
+  <p class="sub">Каждая свеча проходит 14 этапов ручной работы — от плавления воска до финальной проверки пламени.</p>
+  <div class="dash rv">
+    <aside class="dash-product">
+      <img src="images/line-3.jpg" alt="Набор Night Bloom Biotech">
+      <div class="dp-info">
+        <b>Night Bloom Biotech</b>
+        <div class="dcount">свечи · диффузоры · мастер-классы</div>
+      </div>
+      <div class="toggles">
+        <span class="on">Активные компоненты</span>
+        <span>Молекулярные текстуры</span>
+        <span>Ароматы Балтики</span>
+      </div>
+      <div class="dash-price"><b>от 990 ₽</b><small>одна свеча</small></div>
+    </aside>
+    <div class="dash-main">
+      <div class="dash-rings">
+        <div class="gauge">
+          <svg viewBox="0 0 120 120"><defs><linearGradient id="grad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#e0a75e"/><stop offset="1" stop-color="#c07a2e"/></linearGradient></defs><circle class="track" cx="60" cy="60" r="52"/><circle class="val" cx="60" cy="60" r="52" pathLength="100" style="--off:6"/></svg>
+          <b class="valnum">94%</b>
+          <span class="glabel">соевого воска</span>
+        </div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="val" cx="60" cy="60" r="52" pathLength="100" style="--off:16;animation-delay:.25s"/></svg>
+          <b class="valnum">84%</b>
+          <span class="glabel">часов горения одной свечи</span>
+        </div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="val" cx="60" cy="60" r="52" pathLength="100" style="--off:24;animation-delay:.5s"/></svg>
+          <b class="valnum">76%</b>
+          <span class="glabel">ароматов в коллекции</span>
+        </div>
+        <div class="gauge">
+          <svg viewBox="0 0 120 120"><circle class="track" cx="60" cy="60" r="52"/><circle class="val" cx="60" cy="60" r="52" pathLength="100" style="--off:28;animation-delay:.75s"/></svg>
+          <b class="valnum">72%</b>
+          <span class="glabel">парафина и стеарина</span>
+        </div>
+      </div>
+      <div class="dash-strip">
+        <div class="tile"><b>92%</b><span>этапов ручной работы</span></div>
+        <div class="tile"><b>89%</b><span>средняя оценка покупателей</span></div>
+        <div class="tile hot"><b>ТОП 3</b><span>локального бренда</span></div>
+        <div class="tile"><b>4,8</b><span>зажжённых вечеров</span></div>
+      </div>
+      <div style="font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)">0% парафина · 0% искусственных красителей · 100% ручная работа</div>
+    </div>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+  <div class="toner-panel rv">
+    <div class="toner-arrows"><i>←</i><i>→</i></div>
+    <div class="toner-copy">
+      <div class="tmark">/ mysig · workshop</div>
+      <h3>Мастер-классы <b>по свечам</b> в шоуруме</h3>
+      <p>Собери свою свечу с нуля: выбери аромат, отливай воск и забери тёплый свет домой.</p>
+      <div class="toner-ph"><span class="big">2ч</span><small>часа</small></div>
+    </div>
+    <div class="toner-badge"><b>12+</b><span>мастер-классов в месяц</span></div>
+  </div>
+</div></section>
+
+<section class="statement">
+  <div class="halo"></div>
+  <div class="st-top">
+    <div class="cap">Соевые свечи ручной заливки с ароматами Калининградской области</div>
+    <div class="rit">Batch 01 <i>→</i></div>
+  </div>
+  <div class="wrap" style="position:relative">
+    <div class="st-mark">/ mysig</div>
+    <h2 class="huge rv">Тёплый <span class="dm">свет</span> &amp; глубокий <span class="dm">аромат</span> &amp;</h2>
+    <img class="bottle rv" src="images/bottle-purple.jpg" alt="Сыворотка MYSIG Obsidian Elixir в неоновом кольце">
+    <h2 class="huge rv"><span class="dm">воспоминания</span> о лете &amp; <span class="dm">уют в</span> каждой банке</h2>
+    <div class="ml">60<span> ч горения</span></div>
+  </div>
+</section>
+
+<section id="serum"><div class="wrap split">
+  <div class="photo-wrap rv">
+    <img src="images/p1.jpg" alt="Флакон MYSIG Obsidian Elixir">
+    <span class="float-tag t1"><i>🌸</i> Пептиды сирени</span>
+    <span class="float-tag t2"><i>🧪</i> 40 часов света</span>
+  </div>
+  <div class="rv">
+    <div class="num">№ 01 — коллекция</div>
+    <h2>Amber <em>glow</em></h2>
+    <p>Флагманская свеча коллекции: соевый воск, хлопковый фитиль и аромат прогретого янтаря. Тёплый свет на 40 часов — без копоти и парафина.</p>
+    <ul>
+      <li><span>i</span>Соевый воск — плавится без копоти и сажи</li>
+      <li><span>ii</span>Хлопковый фитиль — ровное пламя без шипения</li>
+      <li><span>iii</span>Отдушки IFRA — глубокие ароматы Балтики</li>
+      <li><span>iv</span>Без парафина, стеарина и синтетических добавок</li>
+    </ul>
+  </div>
+</div></section>
+
+<section id="formula" style="background:var(--bg2)"><div class="wrap">
+  <div class="num">/ состав</div>
+  <h2>Ароматы <em>Балтики</em></h2>
+  <p class="sub">Три источника атмосферы MYSIG — от побережья до тёплого пламени.</p>
+  <div class="line-cards">
+    <div class="lcard rv">
+      <img src="images/n1.jpg" alt="Соцветия сирени в ночи" style="object-position:50% 42%;filter:brightness(1.35) saturate(1.1)">
+      <h3>Янтарь <i>и мох</i></h3>
+      <p>Прогретый песок, смола и зелёный мох — аромат вечерней прогулки у залива.</p>
+    </div>
+    <div class="lcard rv">
+      <img src="images/flower-2.jpg" alt="Ночные фиалки с каплями росы">
+      <h3>Малина <i>и магнолия</i></h3>
+      <p>Сладкая малина и белая магнолия — как на нашем баннере коллекции.</p>
+    </div>
+    <div class="lcard rv">
+      <img src="images/texture-swirl.png" alt="Шелковая текстура крем-эссенции с золотом пептидов">
+      <h3>Деревянный <i>фитиль</i></h3>
+      <p>Мягкий треск деревянного фитиля — камин, который всегда с тобой.</p>
+    </div>
+  </div>
+</div></section>
+
+<section id="ritual"><div class="wrap">
+  <div class="num">№ 03 — ритуал</div>
+  <h2>Как <em>зажечь</em> правильно</h2>
+  <p class="sub">Свеча — простой предмет, но пара привычек сделает её лучше.</p>
+  <div class="split">
+    <div class="rv">
+      <ul>
+        <li><span>I</span>Первое включение — 2 часа, чтобы воск оплавился ровно</li>
+        <li><span>II</span>Подрезай фитиль до 5 мм — пламя будет чистым и спокойным</li>
+        <li><span>III</span>Гаси колпачком, а не дутьём — так аромат останется в комнате</li>
+      </ul>
+    </div>
+    <img class="rv" src="images/ritual-dropper.png" alt="Нанесение сыворотки MYSIG пипеткой">
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="quote rv qwith">
+    <img class="qimg" src="images/face-2.jpg" alt="Утреннее честный состав">
+    <div class="qin">
+      <span class="mark">„</span>
+      <p>Зажигаю вечером — и квартира становится другой: тёплая, тихая, с ароматом, который хочется вдыхать глубже.</p>
+      <span>Анна, 29 · шоурум MYSIG на Понарте</span>
+    </div>
+  </div>
+</div></section>
+
+<section id="order">
+  <img class="order-bg" src="images/n2.jpg" alt="" aria-hidden="true">
+  <div class="wrap rv" style="text-align:center">
+    <div class="num">№ 04 — заказ</div>
+    <h2>Первый визит — <em>с ароматом в подарок</em></h2>
+    <p class="sub" style="margin:0 auto 40px">Подарочный дуэт — 1 690 ₽. Одиночная свеча — от 990 ₽. Промокод MYSIG — саше-ароматизатор в подарок.</p>
+    <a class="btn" href="#order" data-order>Выбрать свечу</a>
+  </div>
+</section>
+
+<footer><div class="wrap footer-in">
+  <div class="logo" style="font-size:19px">MYSIG</div>
+  <div>Концепт-витрина свечей ручной работы · <a href="https://t.me/AlexandraHmeleva" target="_blank" rel="noopener" style="color:var(--lav)">хочу такой же сайт</a></div>
+  <div>© 2026</div>
+</div></footer>
+
+<div class="modal" id="order-modal">
+  <div class="modal-box">
+    <button class="modal-x" data-close aria-label="Закрыть">&times;</button>
+    <div id="order-body">
+      <div class="num">№ 05 — заказ</div>
+      <h3>Оставить заявку</h3>
+      <p style="color:var(--muted);font-size:13.5px;margin-bottom:26px">Менеджер свяжется с вами, подберёт аромат и закрепит промокод MYSIG.</p>
+      <form id="orderform">
+        <input class="field" name="name" placeholder="Ваше имя" required>
+        <input class="field" name="phone" placeholder="Телефон или Telegram" required>
+        <button class="btn" type="submit" style="width:100%">Отправить заявку</button>
+      </form>
+    </div>
+    <div class="ok" id="order-ok">
+      <div style="font-size:34px;margin-bottom:10px">🌙</div>
+      <h3>Заявка принята!</h3>
+      <p style="color:var(--muted);font-size:13.5px">Заявка принята! Открой Telegram и напиши нам — закрепим промокод MYSIG.</p>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ────────────────────────────────────────────────
+   КОНТАКТЫ ДЛЯ ЗАЯВОК — замените на свои
+   ──────────────────────────────────────────────── */
+const CONTACT = {
+  wa: "70000000000"            // номер WhatsApp: 7XXXXXXXXX
+};
+
+const $  = s => document.querySelector(s);
+const $$ = s => document.querySelectorAll(s);
+
+/* появление блоков при скролле */
+const io = new IntersectionObserver(entries => {
+  let i = 0;
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.style.animationDelay = (i++ * 90) + "ms";
+      e.target.classList.add("on");
+      io.unobserve(e.target);
+    }
+  });
+}, { threshold: .15 });
+$$(".rv").forEach(el => io.observe(el));
+
+/* кольцевые индикаторы — анимация стартует, когда дашборд в кадре */
+const dashIO = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) { e.target.classList.add("seen"); dashIO.unobserve(e.target); }
+  });
+}, { threshold: .25 });
+if ($(".dash")) dashIO.observe($(".dash"));
+
+/* мобильное меню */
+const mnav = $("#mnav");
+$("#burger").addEventListener("click", () => mnav.classList.toggle("open"));
+mnav.addEventListener("click", e => { if (e.target.tagName === "A") mnav.classList.remove("open"); });
+
+/* модальное окно заказа */
+const modal = $("#order-modal");
+const openOrder  = () => { modal.classList.add("open");  document.body.style.overflow = "hidden"; };
+const closeOrder = () => { modal.classList.remove("open"); document.body.style.overflow = ""; };
+$$("[data-order]").forEach(a => a.addEventListener("click", e => { e.preventDefault(); mnav.classList.remove("open"); openOrder(); }));
+$$("[data-close]").forEach(b => b.addEventListener("click", closeOrder));
+modal.addEventListener("click", e => { if (e.target === modal) closeOrder(); });
+addEventListener("keydown", e => { if (e.key === "Escape") closeOrder(); });
+
+/* заявка → готовое сообщение в WhatsApp, без бэкенда */
+$("#orderform").addEventListener("submit", e => {
+  e.preventDefault();
+  window.open("https://t.me/AlexandraHmeleva", "_blank");
+  $("#order-body").style.display = "none";
+  $("#order-ok").style.display = "block";
+});
+</script>
+
+</body>
+</html>
