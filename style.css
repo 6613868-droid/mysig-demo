@@ -285,17 +285,6 @@ h2 {
 
 .ph-card { aspect-ratio: 4 / 5; }
 
-.ph .ph-label {
-  position: absolute;
-  left: 1.1rem;
-  bottom: .85rem;
-  font-size: .64rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: .15em;
-  color: rgba(38, 37, 34, .42);
-}
-
 .ph img {
   position: absolute;
   inset: 0;
@@ -307,10 +296,6 @@ h2 {
 }
 
 .ph img.loaded { opacity: 1; }
-
-/* техническая подпись скрыта, когда фото загружено */
-.ph .ph-label { transition: opacity .5s ease; }
-.ph img.loaded ~ .ph-label { opacity: 0; }
 
 /* ---------------- интерлюдия ---------------- */
 
@@ -391,6 +376,31 @@ h2 {
 
 /* лёгкий editorial-сдвиг чётных карточек */
 .product:nth-child(even) { margin-top: 3.5rem; }
+
+/* флагман — широкая редакционная карточка на всю ширину сетки */
+.product-feature {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 6fr);
+  gap: clamp(2rem, 5vw, 4.5rem);
+  align-items: center;
+}
+
+.product-feature h3 {
+  font-size: clamp(2.2rem, 4vw, 3.4rem);
+}
+
+.product-feature .feature-body > p {
+  margin-top: .8rem;
+  max-width: 48ch;
+}
+
+.product-feature .card-price {
+  max-width: 30rem;
+}
+
+/* последняя карточка встаёт в правую колонку, чтобы нижний ряд не пустовал */
+.product-grid .product:last-child { grid-column: 2; }
 
 .card-meta {
   display: flex;
@@ -525,7 +535,7 @@ h2 {
 #ritual {
   background:
     linear-gradient(rgba(38, 37, 34, .93), rgba(38, 37, 34, .93)),
-    url("images/texture-ritual.png") center / cover no-repeat;
+    url("images/texture-ritual.jpg") center / cover no-repeat;
 }
 
 .dark .index-row { border-top-color: var(--line-light); color: rgba(244, 239, 231, .5); }
@@ -731,6 +741,8 @@ footer p { font-size: .8rem; }
 @media (max-width: 900px) {
   .product-grid { grid-template-columns: 1fr; }
   .product:nth-child(even) { margin-top: 0; }
+  .product-feature { grid-template-columns: 1fr; align-items: start; }
+  .product-grid .product:last-child { grid-column: auto; }
   .studio-grid, .order-grid { grid-template-columns: 1fr; }
   .studio-grid .ph-card { justify-self: start; }
   .ritual-grid { grid-template-columns: 1fr; }
